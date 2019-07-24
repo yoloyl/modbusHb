@@ -29,10 +29,10 @@ public class MultithreadScheduleTask {
     @Async
     @Scheduled(fixedDelay = 1000)
     public void first() {
-//        System.out.println("定时任务开始:" + LocalDateTime.now().toLocalTime() + "\r\n线程:" +Thread.currentThread().getName());
-//        System.out.println("--------------------------------------------");
-//        modBusPollService.goData();
-//        System.out.println("--------------------------------------------");
+        System.out.println("定时任务开始:" + LocalDateTime.now().toLocalTime() + "\r\n线程:" +Thread.currentThread().getName());
+        System.out.println("--------------------------------------------");
+        modBusPollService.goData();
+        System.out.println("--------------------------------------------");
     }
 
 

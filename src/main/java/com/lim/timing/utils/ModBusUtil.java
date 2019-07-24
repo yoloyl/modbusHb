@@ -51,6 +51,7 @@ public class ModBusUtil {
     // slaveId 从机地址 offset  寄存器读取开始地址 quantity  读取的寄存器数量
     public static int[] readHolding(int slaveId, int offset, int quantity, ModbusMaster m){
         try {
+
             if (!m.isConnected()) {
                 m.connect();
             }

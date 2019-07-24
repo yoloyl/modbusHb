@@ -43,7 +43,7 @@ public class DynamicScheduleTask implements SchedulingConfigurer {
         scheduledTaskRegistrar.addTriggerTask(
                 // 1.添加任务内容(Runnable)
                 () -> {
-                    System.out.println("定时任务开始:" + LocalDateTime.now().toLocalTime() + "\r\n线程:" +Thread.currentThread().getName());
+                    System.out.println("动态定时任务开始:" + LocalDateTime.now().toLocalTime() + "\r\n线程:" +Thread.currentThread().getName());
                     System.out.println("--------------------------------------------");
                     modBusPollService.goData();
                     System.out.println("--------------------------------------------");
